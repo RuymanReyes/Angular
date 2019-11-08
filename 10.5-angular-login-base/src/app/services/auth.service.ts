@@ -71,7 +71,7 @@ export class AuthService {
     localStorage.setItem( 'token', idtoken );
 
     // Expirar token
-    let hoy = new Date();
+    const hoy = new Date();
     hoy.setSeconds( 3600 );
     localStorage.setItem('expira', hoy.getTime().toString() );
   }
